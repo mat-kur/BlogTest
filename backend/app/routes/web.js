@@ -22,7 +22,8 @@ const upload = require('../services/upload-user-avatar')
 router.post('/admin/create-thread', CreateThread.createThread )
 router.post ('/admin/delete-thread', ThreadList.deleteThread)
 router.post ('/admin/edit-thread/:id', EditThread.editThread)
-router.get ('/admin/edit-thread/:id', EditThread.getSingleThread)
+router.post ('/admin/edit-thread/:id', EditThread.editThread)
+router.post ('/admin/reported-comments/delete/:id', ReportedComment.deleteUserReport)
 router.get ('/admin/reported-comments/', ReportedComment.sendReportedComments)
 
 

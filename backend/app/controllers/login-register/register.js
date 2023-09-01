@@ -9,6 +9,7 @@ class Register {
             password: req.body.password,
             email: req.body.email,
             commentNumber: 0,
+            isAdmin: 1,
         });
 
         if (req.files) {

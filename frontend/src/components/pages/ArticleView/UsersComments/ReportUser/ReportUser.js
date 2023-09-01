@@ -17,7 +17,6 @@ export const ReportUser = ({commentID, userID, userComments}) => {
             ...prevState,
             [commentID]: !prevState[commentID]
         }));
-        console.log(commentID)
     }
 
     const sendUserReportToBackend = async (commentID, userID, e) => {

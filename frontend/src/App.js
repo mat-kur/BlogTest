@@ -69,7 +69,7 @@ function App() {
                     </Auth>} />
                 <Route path="/admin/reported-comments" element={
                     <Auth user={user}>
-                        <CommentsReports/>
+                        <CommentsReports user={user} />
                     </Auth>} />
             </Routes>
             <Footer/>
