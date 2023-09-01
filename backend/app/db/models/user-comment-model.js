@@ -34,6 +34,13 @@ const commentSchema = new Schema({
         type: Number,
         default: 0
     },
+    reportContent: {
+        type: String,
+    },
+    reportApprover: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+    }
 })
 
 const Comment = mongoose.model('Comment', commentSchema )

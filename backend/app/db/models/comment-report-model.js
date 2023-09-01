@@ -22,6 +22,13 @@ const reportSchema = new Schema({
         default: 1,
         type: Number,
     },
+    deleteDate : {
+        type: String,
+    },
+    rejectedBy: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+    }
 
 })
 
