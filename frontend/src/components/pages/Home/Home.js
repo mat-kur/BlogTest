@@ -7,12 +7,10 @@ import {useEffect, useState} from "react";
 export const Home = ({user}) => {
 
     return (
-        <div className="blog-container">
-            <UserPanel/>
-            <div className="main-content">
+        <>
                 <BlogMain/>
                 <BlogSide/>
-            </div>
-        </div>
+        </>
+
     );
 }

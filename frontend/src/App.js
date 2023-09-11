@@ -40,7 +40,6 @@ function App() {
 
     return (
         <div className="App">
-            <Header/>
             <Routes>
                 <Route path="/" element={<Home/>} exact/>
                 <Route path="/register" element={<Register/>}/>
@@ -82,7 +81,6 @@ function App() {
                         <ReportsHistory />
                     </Auth>} />
             </Routes>
-            <Footer/>
         </div>
     )
 }

@@ -1,8 +1,13 @@
+/*.blog-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.main-content {*/
+/*    display: flex;*/
+/*}*/
+
 .blog-container {
     display: flex;
     flex-direction: column;
-}
-
-.main-content {
-    display: flex;
 }
